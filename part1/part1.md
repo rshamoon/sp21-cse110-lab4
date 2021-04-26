@@ -1,4 +1,5 @@
-1a.
+# Part 1
+## Part 1a
 
 1) values added: 20
 2) final result: 20
@@ -7,7 +8,7 @@
 5) The code on line 9 returns an error because the code attempts redefine a const variable from 0 to 20. This is an error because you cannot redefine a const.
 6) The code on line 13 returns an error because the reference to result on line 13 is a reference to a variable that is out of scope. It is out of scope because the scope of result is only the if statement (because it was declared with const). Therefore the out of scope reference causes an error to be returned.
 
-1b.
+## Part 1b
 
 1) The code at line 12 will result in 3 being printed out. Line 12 prints the value of i when the for loop is broken out of. Because it starts at i=0 and goes to i<3, the for loop is broken out of when i reaches the value fo 3 (it no longer satisfies i<3). Therefore, it prints out the number 3. Because i is a var, it can be accesed outside the for loop it was declared.
 2) The code at line 13 will result in 150 being printed out. Line 13 will print out the last new price created by the for loop (the new discounted price of the last element in the price array). Because after that i is not < 3, the for loop is broke out of and there is no new value of discountedPrice. Therefore, line 13 prints out the last discountedPrice, which in this case is 150 (50% discounted applied to 300). Because discountedPrice is a var, it can be accesed outside the for loop it was declared. 
